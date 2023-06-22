@@ -35,87 +35,98 @@ function Home_Section3() {
     }
 
     return (
-        <section className='rounded-[30px] w-[100%] h-[750px] my-20 py-10 px-20 flex max-w-[1920px]'>
-            <div className="flex w-[67%]">
+        <section className='rounded-[30px] w-[100%] h-full xl:h-[600px] my-20 px-20 flex overflow-hidden'>
+            <div className="hidden lg:flex mr-[20px]">
                 <Tilt tiltMaxAngleX={1.5} tiltMaxAngleY={1.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"black"} glareBorderRadius='30px' >
 
-                    <div className="rounded-[40px] border border-solid border-4 border-black h-full w-[500px] overflow-hidden">
+                    <div className="rounded-[40px] border border-solid border-4 border-black h-[722px] xl:h-[100%] overflow-hidden">
 
                         <ImageHolder />
 
                     </div>
                 </Tilt>
             </div>
-            <div className="mx-auto w-[100%]">
+            <div className="mx-auto w-[100%] h-full">
                 <Tilt tiltMaxAngleX={0.5} tiltMaxAngleY={0.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"#f205E2"} glareBorderRadius='30px' glarePosition="all" >
-                <div className="flex flex-col justify-center rounded-[40px] border border-solid border-4 border-black w-[100%] py-[58px]">
-                        <Text className="font-secondary px-10" size={30} weight="bold">{"The Quest will suit you if you have:"}</Text>
-                        <div className="flex gap-x-48 mt-5">
-
-                            <ul>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"A deep imagination"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Capacity for observation"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Interest in human behavior"}</Text>
-                                </li>
-                            </ul>
-                            <ul>
-                            <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"A desire to inspire others"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Been searching for meaning in life"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Creativity and self-expression"}</Text>
-                                </li>
-                            </ul>
+                    <div className="flex flex-col justify-center items-center content-between h-[100%] rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[55px]">
+                        <div className="mr-auto">
+                            <Text className="font-secondary text-base md:text-xl lg:text-3xl" weight="bold">{"The Quest will suit you if you have:"}</Text>
+                        </div>
+                        <div className="flex flex-col sm:flex-row justify-evenly w-full mt-5">
+                            <div>
+                                <ul>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary text-xs md:text-lg" >{"A deep imagination"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary text-xs md:text-lg" >{"Capacity for observation"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary text-xs md:text-lg" >{"Interest in human behavior"}</Text>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"A desire to inspire others"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Been searching for meaning"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Creativity and self-expression"}</Text>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </Tilt>
 
                 <Tilt tiltMaxAngleX={0.5} tiltMaxAngleY={0.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"#f205E2"} glareBorderRadius='30px' glarePosition="all" >
-                    <div className="flex flex-col justify-center rounded-[40px] border border-solid border-4 border-black w-[100%] mt-[58px] py-[58px]">
-                        <Text className="font-secondary px-10" size={30} weight="bold">{"But you also struggle with:"}</Text>
-                        <div className="flex gap-x-48 mt-5">
-                            <ul>
-                            <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Loneliness"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Shyness"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"A self-defeating attitude"}</Text>
-                                </li>
-                            </ul>
-                            <ul>
-                            <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Procrastination"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Poor organizational skills"}</Text>
-                                </li>
-                                <li className="flex">
-                                    <img className="pr-5 pl-10" src={arrow_up} />
-                                    <Text className="font-secondary pr-10" size={15} >{"Lack of writing skills"}</Text>
-                                </li>
-                            </ul>
+                    <div className="flex flex-col justify-center items-center rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[55px] mt-[20px]">
+                        <div className="mr-auto">
+                            <Text className="font-secondary text-base md:text-xl lg:text-3xl" weight="bold">{"But you also struggle with:"}</Text>
+                        </div>
+                        <div className="flex flex-col sm:flex-row justify-evenly w-full mt-5">
+                            <div>
+                                <ul>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Loneliness"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Shyness"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"A self-defeating attitude"}</Text>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Procrastination"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Organizational skills"}</Text>
+                                    </li>
+                                    <li className="flex">
+                                        <img className="pr-1 md:pr-5" src={arrow_up} />
+                                        <Text className="font-secondary pr-10 text-xs md:text-lg" >{"Lack of writing skills"}</Text>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </Tilt>

@@ -4,27 +4,27 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Footer() {
   return (
-    <div className="grid grid-cols-2 px-20 my-[200px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 px-1 xl:px-20 my-[100px]">
       <Tilt tiltMaxAngleX={0.5} tiltMaxAngleY={0.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"black"} glareBorderRadius='30px' >
 
         <div className="p-[50px]">
           <div className="w-[100%] pb-[50px] flex flex-col items-center">
-            <Text h1 size={35} color="black" weight="bold" css={{ fontFamily: "Josefin Sans" }}>SCREENWRITERS' QUEST</Text>
-            <Text p size={25} color="black" css={{ fontFamily: "Raleway" }} >Your next feature starts here.</Text>
+            <Text h1 className="text-sm sm:text-lg lg:text-4xl" color="black" weight="bold" css={{ fontFamily: "Josefin Sans" }}>SCREENWRITERS' QUEST</Text>
+            <Text p className="text-xs sm:text-sm lg:text-3xl" color="black" css={{ fontFamily: "Raleway" }} >Your next feature starts here.</Text>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-3 gap-x-48">
-              <div className="flex flex-col gap-y-10 text-black">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-48">
+              <div className="flex flex-col gap-y-10 text-black items-center">
                 <a className="nav-item">ABOUT</a>
                 <a className="nav-item">PORTFOLIOS</a>
                 <a className="nav-item">REVIEWS</a>
               </div>
-              <div className="flex flex-col gap-y-10">
+              <div className="flex flex-col gap-y-10 pt-10 md:pt-0 items-center">
                 <a className="nav-item">TEAM</a>
                 <a className="nav-item">PRICING</a>
                 <a className="nav-item">BLOG</a>
               </div>
-              <div className="flex flex-col gap-y-10">
+              <div className="flex flex-col gap-y-10 pt-10 md:pt-0 items-center">
                 <a className="nav-item">
                   <i className="text-xl fa-solid fa-magnifying-glass"></i>
                 </a>
@@ -43,8 +43,8 @@ export default function Footer() {
 
         <div className="p-[50px]">
           <div className="w-[100%] mb-5  flex flex-col items-center">
-            <Text h1 size={35} color="black" css={{ fontFamily: "Josefin Sans" }}>DO YOU HAVE ANY QUESTIONS?</Text>
-            <Text p size={25} color="black" css={{ fontFamily: "Raleway" }} >Feel free to write us below, we'll contact you soon!</Text>
+            <Text h1 className="text-sm sm:text-lg lg:text-4xl" color="black" css={{ fontFamily: "Josefin Sans" }}>QUESTIONS?</Text>
+            <Text p className="text-xs sm:text-sm lg:text-3xl" color="black" css={{ fontFamily: "Raleway" }} >Feel free to write us!</Text>
           </div>
           <div className=" flex justify-center gap-x-5">
             <div className="w-[100%]">

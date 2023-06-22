@@ -19,7 +19,7 @@ function Home_Section4() {
 
     const ImageHolder = ({ video }) => {
         return (
-            <div className='w-[80vh] h-[100%] rounded-[40px] group relative overflow-hidden'>
+            <div className=' md:w-[60vh] 2xl:w-[80vh] h-[100%] rounded-[40px] group relative overflow-hidden mx-auto'>
                 {/* overlay */}
                 <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
                 {/* img */}
@@ -40,63 +40,63 @@ function Home_Section4() {
     return (
         <section className="px-20">
             <div>
-                <Text className="font-secondary" weight="bold" size={50}>How does it work?</Text>
+                <Text className="font-secondary text-xl md:text-3xl xl:text-5xl" weight="bold">How does it work?</Text>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center md:w-full">
                 <Button.Group color="gradient" bordered rounded>
-                    <Button className="v-btn" onClick={() => {
+                    <Button onClick={() => {
                         setVideo(video_lesson1)
                         setText1(store.Home_Section4_Text1)
                         {/*setText2(store.Home_Section1_Text3)*/ }
                     }}>
-                        <Text className="font-secondary" size={20} weight="bold">{"Video Lessons"}</Text>
+                        <Text className="font-secondary text-xs md:text-base xl:text-2xl" weight="bold">{"Video Lessons"}</Text>
                     </Button>
                     <Button className="v-btn" onClick={() => {
                         setVideo(video_lesson2)
                         setText1(store.Home_Section4_Text2)
                         {/*setText2(store.Home_Section1_Text2)*/ }
                     }}>
-                        <Text className="font-secondary" size={20} weight="bold">{"Online Meetings"}</Text>
+                        <Text className="font-secondary text-xs md:text-base xl:text-2xl" weight="bold">{"Online Meetings"}</Text>
                     </Button>
                     <Button className="v-btn" onClick={() => {
                         setVideo(video_lesson3)
                         setText1(store.Home_Section4_Text3)
                         {/*setText2(store.Home_Section1_Text2)*/ }
                     }}>
-                        <Text className="font-secondary" size={20} weight="bold">{"Homework"}</Text>
+                        <Text className="font-secondary text-xs md:text-base xl:text-2xl" weight="bold">{"Homework"}</Text>
                     </Button>
                     <Button className="v-btn" onClick={() => {
                         setVideo(video_lesson4)
                         setText1(store.Home_Section4_Text4)
                         {/*setText2(store.Home_Section1_Text2)*/ }
                     }}>
-                        <Text className="font-secondary" size={20} weight="bold">{"Writing"}</Text>
+                        <Text className="font-secondary text-xs md:text-base xl:text-2xl" weight="bold">{"Writing"}</Text>
                     </Button>
                     <Button className="v-btn" onClick={() => {
                         setVideo(video_lesson5)
                         setText1(store.Home_Section4_Text5)
                         {/*setText2(store.Home_Section1_Text2)*/ }
                     }}>
-                        <Text className="font-secondary" size={20} weight="bold">{"Additional Activities"}</Text>
+                        <Text className="font-secondary text-xs md:text-base xl:text-2xl" weight="bold">{"Additional Activities"}</Text>
                     </Button>
                 </Button.Group>
             </div>
-            <div className="flex mt-10 justify-center mx-auto">
-                <div className="pl-20">
+            <div className="xl:flex mt-10 justify-center mx-auto">
+                <div className="pl-0 xl:pl-20">
                     <Tilt tiltMaxAngleX={1.5} tiltMaxAngleY={1.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"black"} glareBorderRadius='30px' >
                         <ImageHolder video={video} />
                     </Tilt>
                 </div>
-                <div className=" flex items-center">
+                <div className="flex items-center mt-10 xl:mt-0">
                     <div className="flex flex-col">
-                        <div className="w-[100%] px-[150px]">
-                            <Text className="font-tertiary" size={20}>
+                        <div className="w-[100%] md:px-[150px]">
+                            <Text className="font-tertiary text-xl xl:text-2xl">
                                 {text1}
                             </Text>
                         </div>
                         <div className="flex justify-center mt-10">
-                            <Button className="v-btn" size="xl" rounded>
-                                <Text className="font-secondary" size={20} weight="bold">{"ENROLL NOW"}</Text>
+                            <Button shadow color="gradient" className="mt-5 py-7 px-5" rounded bordered>
+                                <Text className="font-secondary" css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }} size={20} weight="bold">{"APPLY NOW"}</Text>
                             </Button>
                         </div>
                     </div>

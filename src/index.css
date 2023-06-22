@@ -22,3 +22,7 @@ video {
   object-fit: cover !important;
   border-radius: 30px !important;
 }
+
+a {
+  color: black !important;
+}

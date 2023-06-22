@@ -43,8 +43,8 @@ function Home_Hero() {
                 </div>
                 <div className="absolute top-[70%] left-[15%]">
                     <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'>
-                        <Button className='mr-10 px-2' size="xl" color="gradient" rounded bordered >
-                            <p className='font-tertiary text-4xl font-bold text-white'>Start Now!</p>
+                    <Button shadow color="gradient" className="mt-5 py-7 px-5" rounded bordered>
+                            <Text className="font-secondary" css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }} size={20} weight="bold">{"APPLY NOW!"}</Text>
                         </Button>
                     </a>
                 </div>

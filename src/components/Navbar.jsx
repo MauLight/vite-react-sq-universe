@@ -33,16 +33,14 @@ const Nav = () => {
     }
 
     return (
-        <div className="flex items-center justify-between py-5 w-[100%] bg-white">
-            <a href="/" className='pl-2 pt-2'>
+        <div className="flex items-center justify-end sm:justify-between w-[100%] bg-white">
+            <a href="/" className='pl-2 pt-2 hidden sm:flex'>
                 <img src={image} style={style} alt="logo" />
             </a>
-            <nav className='opacity-100'>
-
-
-                <section className="MOBILE-MENU flex ">
-                    <div className="icons mx-5 items-center">
-                        <ul className="DESKTOP-MENU lg:flex gap-5 pt-[10px]">
+            <nav>
+                <section className="MOBILE-MENU flex items-center">
+                    <div className="icons items-center">
+                        <ul className="DESKTOP-MENU flex gap-5 pt-[10px]">
                             <li>
                                 <a href="/">
                                     <i className="text-xl fa-solid fa-magnifying-glass"></i>
@@ -60,7 +58,7 @@ const Nav = () => {
                                             <Popover>
                                                 <Popover.Trigger>
                                                     <button>
-                                                        <i className="text-xl fa-regular fa-user"></i>
+                                                        <i className="text-xl text-black fa-regular fa-user"></i>
                                                     </button>
                                                 </Popover.Trigger>
                                                 <Popover.Content>
@@ -68,7 +66,7 @@ const Nav = () => {
                                                         <li className="border-gray-400 my-8 uppercase">
                                                             <button onClick={() => navigate('/account')}>
                                                                 <div className='flex'>
-                                                                    <i className="text-xl fa-regular fa-user mx-2 pt-[4px]"></i>
+                                                                    <i className="text-xl text-black fa-regular fa-user mx-2 pt-[4px]"></i>
                                                                     <Text p size={20}>Profile</Text>
                                                                 </div>
                                                             </button>
@@ -96,12 +94,12 @@ const Nav = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="HAMBURGER-ICON">
+                    <div className="HAMBURGER-ICON ml-auto">
                         <Popover>
                             <Popover.Trigger>
-                                <Button className='p-0 m-1' auto flat>
-                                    <Hamburger color='black' size={20} duration={0.8} />
-                                </Button>
+
+                                    <Hamburger className='p-0 m-1' color='black' size={20} duration={0.8} />
+
                             </Popover.Trigger>
                             <Popover.Content>
                                
