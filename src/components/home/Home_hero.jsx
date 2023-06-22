@@ -23,11 +23,11 @@ function Home_Hero() {
             </div>
             <div className="inner">
                 <div className="absolute top-[40%] left-[8%]">
-                    <h1 className='text-white font-secondary text-5xl'>Write you next screenplay</h1>
-                    <p className='text-white font-tertiary text-3xl pl-2' >Like you've never done before.</p>
+                    <h1 className='text-white font-secondary text-2xl md:text-5xl'>Write you next screenplay</h1>
+                    <p className='text-white font-tertiary md:text-3xl pl-2' >Like you've never done before.</p>
                 </div>
                 <div className="absolute top-[53%] left-[8%]">
-                    <Text h1 className='text-white font-secondary text-8xl' css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }} >{"in "}<b>
+                    <Text h1 className='text-white font-secondary text-4xl md:text-8xl' css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }} >{"in "}<b>
                         <TypeAnimation sequence={[
                             '13 WEEKS', 3000,
                             ' 13 WEEKS', 3000,

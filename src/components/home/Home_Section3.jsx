@@ -35,7 +35,7 @@ function Home_Section3() {
     }
 
     return (
-        <section className='rounded-[30px] w-[100%] h-full xl:h-[600px] my-20 px-20 flex overflow-hidden'>
+        <section className='rounded-[30px] w-[100%] h-full xl:h-[600px] my-20 px-5 md:px-20 flex overflow-hidden'>
             <div className="hidden lg:flex mr-[20px]">
                 <Tilt tiltMaxAngleX={1.5} tiltMaxAngleY={1.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"black"} glareBorderRadius='30px' >
 

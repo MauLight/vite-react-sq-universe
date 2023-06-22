@@ -13,29 +13,29 @@ function Home_Section2() {
     const { store, actions } = useContext(Context)
 
     return (
-        <section className='rounded-[30px] w-[100%] h-auto mb-40'>
+        <section className='rounded-[30px] w-[100%] h-auto mb-20 md:mb-40'>
             <div className="flex flex-col mb-10 justify-center items-center">
                 <div className="flex flex-wrap md:mr-auto">
                     <Text className="font-secondary text-xl md:text-3xl xl:text-5xl" weight="bold">Are you ready for THE QUEST?</Text>
                 </div>
                 <div className="sm:flex justify-between w-full items-center px-15 pt-[50px]">
                     <div className="flex flex-col justify-center pt-3">
-                        <img src={book} />
+                        <img className="w-1/2 md:w-full mx-auto" src={book} />
                         <Text className="font-secondary flex justify-center mt-5" size={20} weight="bold">Theory</Text>
                     </div>
                     <Text className="font-secondary flex justify-center items-center" size={60} weight="bold">+</Text>
                     <div className="flex flex-col justify-center pt-3">
-                        <img src={typewriter} />
+                        <img className="w-1/2 md:w-full mx-auto" src={typewriter} />
                         <Text className="font-secondary flex justify-center mt-5" size={20} weight="bold">Practice</Text>
                     </div>
                     <Text className="font-secondary flex justify-center items-center" size={60} weight="bold">+</Text>
                     <div className="flex flex-col justify-center pt-3">
-                        <img src={brain} />
+                        <img className="w-1/2 md:w-full mx-auto" src={brain} />
                         <Text className="font-secondary flex justify-center mt-5" size={20} weight="bold">Growth mindset</Text>
                     </div>
                     <Text className="font-secondary flex justify-center items-center" size={60} weight="bold">=</Text>
                     <div className="flex flex-col justify-center pt-3">
-                        <img src={draft} />
+                        <img className="w-1/2 md:w-full mx-auto" src={draft} />
                         <Text className="font-secondary flex justify-center mt-5" size={20} weight="bold">Finished screenplay</Text>
                     </div>
                 </div>
