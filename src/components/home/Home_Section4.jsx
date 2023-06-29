@@ -39,7 +39,7 @@ function Home_Section4() {
 
     return (
         <section className="px-20">
-            <div>
+            <div className="mb-10">
                 <Text className="font-secondary text-xl md:text-3xl xl:text-5xl" weight="bold">How does it work?</Text>
             </div>
             <div className="flex justify-center items-center md:w-full">
@@ -90,7 +90,7 @@ function Home_Section4() {
                 <div className="flex items-center mt-10 xl:mt-0">
                     <div className="flex flex-col">
                         <div className="w-[100%] md:px-[150px]">
-                            <Text className="font-tertiary text-xl xl:text-2xl">
+                            <Text className="font-tertiary  text-base xl:text-lg">
                                 {text1}
                             </Text>
                         </div>

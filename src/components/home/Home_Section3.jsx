@@ -48,7 +48,7 @@ function Home_Section3() {
             </div>
             <div className="mx-auto w-[100%] h-full">
                 <Tilt tiltMaxAngleX={0.5} tiltMaxAngleY={0.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"#f205E2"} glareBorderRadius='30px' glarePosition="all" >
-                    <div className="flex flex-col justify-center items-center content-between h-[100%] rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[55px]">
+                    <div className="flex flex-col justify-center items-center content-between h-[100%] rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[48px]">
                         <div className="mr-auto">
                             <Text className="font-secondary text-base md:text-xl lg:text-3xl" weight="bold">{"The Quest will suit you if you have:"}</Text>
                         </div>
@@ -90,7 +90,7 @@ function Home_Section3() {
                 </Tilt>
 
                 <Tilt tiltMaxAngleX={0.5} tiltMaxAngleY={0.5} glareEnable={true} glareMaxOpacity={0.15} glareColor={"#f205E2"} glareBorderRadius='30px' glarePosition="all" >
-                    <div className="flex flex-col justify-center items-center rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[55px] mt-[20px]">
+                    <div className="flex flex-col justify-center items-center rounded-[40px] border border-solid border-4 border-black p-10 xl:py-[48px] mt-[20px]">
                         <div className="mr-auto">
                             <Text className="font-secondary text-base md:text-xl lg:text-3xl" weight="bold">{"But you also struggle with:"}</Text>
                         </div>

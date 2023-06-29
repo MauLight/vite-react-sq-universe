@@ -6,6 +6,7 @@ import Home from './views/Home'
 import Protected from "./hoc/Protected";
 import './App.css'
 import Account from "./views/Account";
+import Inspiration from "./views/Inspiration";
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
                 </Protected>
               }
             />
+            <Route
+              path="/recommendations"
+              element={<Inspiration />} />
           </Route>
         </Routes>
       </AuthContextProvider>

@@ -10,7 +10,7 @@ function Home_Hero() {
     return (
         <div className='h-[600px]' >
             <div className='flex h-[100%]'>
-            <div className="w-full h-full absolute z-0 bg-gradient-to-r from-black to-black-100 rounded-[30px]"></div>
+                <div className="w-full h-full absolute z-0 bg-gradient-to-r from-black to-black-100 rounded-[30px]"></div>
                 <video
                     src={hero_video}
                     type='video/mp4'
@@ -43,7 +43,7 @@ function Home_Hero() {
                 </div>
                 <div className="absolute top-[70%] left-[15%]">
                     <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'>
-                    <Button shadow color="gradient" className="mt-5 py-7 px-5" rounded bordered>
+                        <Button shadow color="gradient" className="mt-5 py-7 px-5" rounded bordered>
                             <Text className="font-secondary" css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }} size={20} weight="bold">{"APPLY NOW!"}</Text>
                         </Button>
                     </a>
