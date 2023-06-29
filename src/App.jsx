@@ -7,6 +7,7 @@ import Protected from "./hoc/Protected";
 import './App.css'
 import Account from "./views/Account";
 import Inspiration from "./views/Inspiration";
+import QuestMenu from "./views/QuestMenu";
 
 
 function App() {
@@ -22,6 +23,14 @@ function App() {
               element={
                 <Protected>
                   <Account />
+                </Protected>
+              }
+            />
+            <Route
+              path="/quest-menu"
+              element={
+                <Protected>
+                  <QuestMenu />
                 </Protected>
               }
             />

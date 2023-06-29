@@ -5,13 +5,13 @@ export const ImageHolder = ({ title, logline, id, img, position }) => {
             {/* overlay */}
             <div className='group-hover:bg-black/60 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
-            <img className={`mx-auto w-[100%] h-[100%] object-cover ${position} rounded-[15px] group-hover:scale-125 group-hover:grayscale-0 transition-all duration-500`} src={img} alt='' />
+            <img className={`quotes mx-auto w-[100%] h-[100%] object-cover ${position} rounded-[15px] group-hover:scale-125 group-hover:grayscale-0 transition-all duration-500`} src={img} alt='movie-poster' />
             {/* pretitle */}
             <div className="flex">
-                <div className='absolute -bottom-full left-12 text-white font-secondary group-hover:bottom-6 transition-all duration-500 z-50'>{`${title}`}</div>
+                <div className='absolute -bottom-full hidden sm:flex left-12 text-white text-xs lg:text-xl font-secondary group-hover:bottom-6 transition-all duration-500 z-50'>{`${title}`}</div>
                 {/* title */}
             </div>
-            <div className='absolute -bottom-full left-2 px-10 group-hover:bottom-14 transition-all duration-700 z-50'><span className=' text-xs font-tertiary text-white'>{logline}</span></div>
+            <div className='absolute -bottom-full left-2 px-10 group-hover:bottom-14 transition-all duration-700 z-50'><span className='hidden min-[1400px]:flex text-xs font-tertiary text-white'>{logline}</span></div>
         </div>
     )
 }

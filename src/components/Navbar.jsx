@@ -3,7 +3,7 @@ import Hamburger from 'hamburger-react';
 import { TiltWrapper } from '../hoc/SectionWrapper';
 import { Popover, Button, Text } from '@nextui-org/react';
 import { UserAuth } from '../context/authContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -94,15 +94,20 @@ const Nav = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="HAMBURGER-ICON ml-auto">
+                    <div className="HAMBURGER-ICON flex flex-wrap w-[50px] h-[50px] ml-3">
                         <Popover>
                             <Popover.Trigger>
-
-                                    <Hamburger className='p-0 m-1' color='black' size={20} duration={0.8} />
+                                <button>
+                                    <Hamburger color='black' size={25} duration={0.8} />
+                                </button>
 
                             </Popover.Trigger>
                             <Popover.Content>
-                               
+                               <ul className='mx-10 my-3'>
+                                <li>
+                                    <Link to="/quest-menu" className='font-tertiary font-bold'>The Quest</Link>
+                                </li>
+                               </ul>
                             </Popover.Content>
                         </Popover>
                     </div>

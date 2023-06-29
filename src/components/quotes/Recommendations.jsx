@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useNavigate } from 'react-router-dom'
 import { Button, Text } from "@nextui-org/react";
 import { quotes } from "../../utils/quotes"
 import { ImageHolder } from "../ImageHolder"
@@ -11,6 +12,8 @@ function Recommendations() {
     //Get a random integer for random quotes from quotes array.
     const getRandomInt = (length) => Math.floor(Math.random() * length)
     const length = getRandomInt(quotes.length)
+
+    const navigate = useNavigate()
 
     const genre = "27"
     const theme = "war"
@@ -86,8 +89,13 @@ function Recommendations() {
         }
     }
 
+    const redirectUser = () => {
+        navigate('/')
+    }
+
     useEffect(() => {
         getMovieAsync()
+        //setTimeout(redirectUser, 20000)
 
     }, [])
 

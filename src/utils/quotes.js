@@ -15,7 +15,7 @@ export const quotes = [
     },
     {
         author:"Robert Rodriguez",
-        img: 'https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2020/05/Robert-Rodriguez-Sin-City.jpg?resize=1200%2C720&quality=80&ssl=1',
+        img: 'https://img.texasmonthly.com/2019/03/13_RobertRodriguez.jpg?auto=compress&crop=faces&fit=fit&fm=jpg&h=0&ixlib=php-3.3.1&q=45&w=1250',
         quote: "If you’re creative and technical, you’re unstoppable.",
         position: '',
         id:'3C'
@@ -35,9 +35,9 @@ export const quotes = [
         id:'D5'
     },
     {
-        author:"Syd Field",
-        img: 'https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/1/9/3/1183193_Syd-Field.jpg',
-        quote: 'Without conflict, there is no action.',
+        author:"Stanley Kubrick",
+        img: 'https://i.guim.co.uk/img/media/dbc4567095cf14fd22a0427debbe422e2ed2f99c/0_234_2600_1560/master/2600.jpg?width=1200&quality=85&auto=format&fit=max&s=99d1e160e00d09b674c9a481c6a885b8',
+        quote: 'If it can be written or thought, it can be filmed.',
         position: '',
         id:'E6'
     },
@@ -51,7 +51,7 @@ export const quotes = [
     {
         author:"Maya Angelou",
         img: 'https://www.mayaangelou.com/wp-content/uploads/2016/12/Image-5.png',
-        quote: `The desire to reach the stars is ambitious. The desire to reach hearts is wise and most possible.`,
+        quote: `There is no greater agony than bearing an untold story inside you.`,
         position: '',
         id:'G8'
     },
