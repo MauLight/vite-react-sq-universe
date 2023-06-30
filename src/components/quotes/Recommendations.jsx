@@ -89,14 +89,8 @@ function Recommendations() {
         }
     }
 
-    const redirectUser = () => {
-        navigate('/')
-    }
-
     useEffect(() => {
         getMovieAsync()
-        //setTimeout(redirectUser, 20000)
-
     }, [])
 
     return (

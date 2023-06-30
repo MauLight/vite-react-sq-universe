@@ -1,10 +1,24 @@
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Quotes from '../components/quotes/Quotes'
 import Recommendations from '../components/quotes/Recommendations'
-import { Button, Text } from "@nextui-org/react";
+import { Text } from "@nextui-org/react"
 
 import { Triangle } from 'react-loader-spinner'
 
 export default function Inspiration() {
+
+    const navigate = useNavigate()
+
+    const redirectUser = () => {
+        navigate('/')
+    }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        //setTimeout(redirectUser, 20000)
+    }, [])
+
     return (
         <div>
             <Quotes />

@@ -29,6 +29,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       //Lesson 01 - Dramatic Basis of Story  
       concept: "Idea or Concept",
+      genre: "Genre",
       value: "Community Value",
       theme: "THEME",
       truth: "TRUTH",
@@ -49,6 +50,10 @@ const getState = ({ getStore, getActions, setStore }) => {
         concept_idea: {
           def: "In a general sense, what is the source of inspiration behind your need to write? Those images in your mind, sum them up into a phrase.",
           example: 'The eternal battle between good and evil in a galaxy far far away.'
+        },
+        genre: {
+          def: "The general category that expresses the tone and mood you're aiming at with your story.",
+          example: 'Action, suspense, horror, comedy, fantasy are examples of genre.'
         },
         community_value: {
           def: "How your point of view can solve a global, territorial, target group, etc. problem. Appealing to broader audiences.",
@@ -119,7 +124,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           example: "Letting go of everything that connects you with a past you want to let go."
         },
       },
-      titles: ["Concept or Idea", "Community value", "Myth", "Theme", "Truth", "Contra-positive", "Lie", "Flaw", "Want", "Need", "Self-revelation", "Fall into Lie", "Antagonism", "Opposition", "Half-Truth", "Changed objective", "Battle", "Death"]
+      titles: ["Concept or Idea", 'Genre', "Community value", "Myth", "Theme", "Truth", "Contra-positive", "Lie", "Flaw", "Want", "Need", "Self-revelation", "Fall into Lie", "Antagonism", "Opposition", "Half-Truth", "Changed objective", "Battle", "Death"]
 
     },
     actions: {
@@ -128,6 +133,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       handleConcept: (concept) => {
         setStore({ concept: concept });
+      },
+      handleGenre: (genre) => {
+        setStore({ genre: genre });
       },
       handleValue: (value) => {
         setStore({ value: value });

@@ -18,7 +18,7 @@ export const TiltWrapper = (Component, idName, number) =>
 export const DramaticWrapper = (Component, IdName) =>
     function Dramatic_HOC() {
         return (
-            <section className='rounded-[30px] w-[100%] max-w-full mx-auto relative z-0  px-5 md:px-20 my-20 bg-black' id={IdName}>
+            <section className='rounded-[30px] w-[100%] max-w-full mx-auto relative z-0 px-5 md:px-20 my-10 bg-black' id={IdName}>
                 <Component />
                 <StarsCanvas />
             </section>

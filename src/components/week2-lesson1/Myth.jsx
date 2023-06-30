@@ -11,45 +11,35 @@ function Myth() {
 
     console.log(store.concept)
 
-    const { concept_idea,
-        community_value,
+    const {
         myth,
-        theme,
-        truth,
-        contra_positive,
-        lie,
-        flaw,
-        want,
-        need,
-        self_revelation,
-        fall_into_lie
     } = store.dramatic_basis
 
     return (
-        <div className='rounded-[30px] w-[100%] h-[750px]'>
-            <div className='rounded-[30px]  w-[100%] h-[750px]'>
-                <img className='rounded-[30px]  w-[100%] h-[750px] object-cover object-top' src={myth_img} />
+        <div className='rounded-[30px] w-full h-[600px]'>
+            <div className='rounded-[30px] h-[100%]'>
+                <img className='rounded-[30px] w-[100%] h-[100%] object-cover object-top' src={myth_img} />
             </div>
             <div className="inner">
-                <div className="absolute top-[20%] left-[44%]">
-                    <h1 className='text-black font-secondary text-8xl'><b>{store.titles[2]}</b></h1>
-                </div>
-                <div className="absolute top-[40%] left-[31%] w-[700px]">
-                    <p className='text-black font-tertiary text-3xl' >{myth.def}</p>
-                    <div className='flex text-black font-tertiary text-3xl pl-[50px]'>
-                        <Text size={40} css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>{store.concept}</Text>
-                        <Text className='mx-3' size={40}>+</Text>
-                        <Text size={40} css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>{store.value}</Text>
+                <div className="absolute left-[-38%] top-[45%] min-[400px]:left-[-8%] min-[400px]:top-[40%] sm:left-[12%] sm:top-[20%] lg:left-[22%] lg:top-[15%] xl:left-[27%] xl:top-[15%]">
+                    <div className="mx-auto w-[400px] lg:w-[600px] mt-5">
+                        <h1 className='text-center text-black font-secondary text-3xl min-[1450px]:text-6xl'><b>{store.titles[3]}</b></h1>
+                        <p className='hidden md:flex text-center text-black font-tertiary text-lg lg:text-xl min-[1450px]:text-2xl mt-5'>{myth.def}</p>
                     </div>
-                    <Input onChange={() => actions.handleMyth} className="mt-4 w-[90%] pl-[60px]" type="text" fullWidth clearable status="default" size="xl" rounded color="secondary" placeholder={store.titles[2]} />
-                </div>
-                <div className="absolute top-[77%] left-[46%] w-[700px]">
-                    <Button className='px-5' shadow ghost rounded size="lg" color="gradient" auto>
-                        <p className='text-black font-tertiary text-2xl' >Save</p>
-                    </Button>
+                    <div className="hidden md:flex justify-center items-center w-[600px] mt-5">
+                        <Text className='text-lg lg:text-2xl min-[1450px]:text-4xl' css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>{store.concept}</Text>
+                        <Text className='mx-3 text-lg lg:text-2xl min-[1450px]:text-4xl'>+</Text>
+                        <Text className='text-lg lg:text-2xl min-[1450px]:text-4xl' css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>{store.value}</Text>
+                    </div>
+                    <div className="flex-col justify-center items-center w-[600px] mt-5">
+                        <Input onChange={() => actions.handleMyth} className="mx-auto w-[260px] lg:w-[300px] xl:w-[400px] min-[1450px]:w-[460px]" type="text" fullWidth clearable status="default" size="xl" rounded color="secondary" placeholder={store.titles[2]} />
+                        <Button className='px-5 my-5 mx-auto' shadow ghost rounded size="lg" color="gradient" auto>
+                            <p className='text-black font-tertiary text-2xl' >Save</p>
+                        </Button>
+                    </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 
