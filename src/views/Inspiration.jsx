@@ -11,12 +11,12 @@ export default function Inspiration() {
     const navigate = useNavigate()
 
     const redirectUser = () => {
-        navigate('/')
+        navigate('/week2-lesson2')
     }
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        //setTimeout(redirectUser, 20000)
+        setTimeout(redirectUser, 20000)
     }, [])
 
     return (

@@ -32,7 +32,7 @@ function Myth() {
                         <Text className='text-lg lg:text-2xl min-[1450px]:text-4xl' css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>{store.value}</Text>
                     </div>
                     <div className="flex-col justify-center items-center w-[600px] mt-5">
-                        <Input onChange={() => actions.handleMyth} className="mx-auto w-[260px] lg:w-[300px] xl:w-[400px] min-[1450px]:w-[460px]" type="text" fullWidth clearable status="default" size="xl" rounded color="secondary" placeholder={store.titles[2]} />
+                        <Input onChange={() => actions.handleMyth} className="mx-auto w-[260px] lg:w-[300px] xl:w-[400px] min-[1450px]:w-[460px]" type="text" fullWidth clearable status="default" size="xl" rounded color="secondary" placeholder={store.titles[3]} />
                         <Button className='px-5 my-5 mx-auto' shadow ghost rounded size="lg" color="gradient" auto>
                             <p className='text-black font-tertiary text-2xl' >Save</p>
                         </Button>

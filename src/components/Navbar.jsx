@@ -103,11 +103,14 @@ const Nav = () => {
 
                             </Popover.Trigger>
                             <Popover.Content>
-                               <ul className='mx-10 my-3'>
-                                <li>
-                                    <Link to="/quest-menu" className='font-tertiary font-bold'>The Quest</Link>
-                                </li>
-                               </ul>
+                                <ul className='mx-10 my-3'>
+                                    <li>
+                                        <Link to="/quest-menu" className='font-tertiary font-bold'>The Quest</Link>
+                                    </li>
+                                    <li>
+                                        <a href='https://sq-universe.netlify.app/'>SQ-Universe</a>
+                                    </li>
+                                </ul>
                             </Popover.Content>
                         </Popover>
                     </div>
