@@ -9,6 +9,7 @@ import Account from "./views/Account";
 import Inspiration from "./views/Inspiration";
 import Week2_Menu from "./views/Week2_Menu";
 import Syllabus from "./views/Syllabus";
+import Week2_Lesson1 from "./views/Week2_Lesson1";
 
 
 function App() {
@@ -40,6 +41,14 @@ function App() {
               element={
                 <Protected>
                   <Week2_Menu />
+                </Protected>
+              }
+            />
+            <Route
+              path="/week2-lesson1"
+              element={
+                <Protected>
+                  <Week2_Lesson1 />
                 </Protected>
               }
             />

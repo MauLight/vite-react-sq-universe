@@ -2,9 +2,13 @@ import { Button } from '@nextui-org/react';
 import { TiltWrapper } from '../../hoc/SectionWrapper';
 import { TypeAnimation } from 'react-type-animation'
 import myth from '../../img/myth-menu.png'
+import { useNavigate } from 'react-router-dom';
 
 
 function Myth_Lesson() {
+
+    const navigate = useNavigate()
+
     return (
         <div className='h-[200px] md:h-[400px] xl:h-[600px] mt-[50px]'>
             <div className='flex h-[100%]'>
@@ -31,11 +35,9 @@ function Myth_Lesson() {
                 <div className="absolute top-[63%] left-[40%] min-[450px]:top-[65%] min-[450px]:left-[62%] md:top-[70%] xl:top-[75%] xl:left-[50%]">
                     <p className='text-white font-tertiary hidden min-[950px]:flex min-[950px]:text-sm xl:text-2xl'>Move from a single idea into the <b className='px-1'>{" MYTH "}</b> of your story.</p>
                     <div className="flex justify-center items-center">
-                        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'>
-                            <Button className='mt-5 w-[17vh] h-[6vh] md:w-[25vh] md:h-[8vh] lg:w-[35vh] lg:h-[9vh] xl:w-[40vh] xl:h-[10vh]' size='xs' color="warning" bordered rounded >
-                                <p className='font-tertiary text-base lg:text-xl'><b>Start Lesson</b></p>
-                            </Button>
-                        </a>
+                        <Button onPress={() => navigate('/week2-lesson1')} className='mt-5 w-[17vh] h-[6vh] md:w-[25vh] md:h-[8vh] lg:w-[35vh] lg:h-[9vh] xl:w-[40vh] xl:h-[10vh]' size='xs' color="warning" bordered rounded >
+                            <p className='font-tertiary text-base lg:text-xl'><b>Start Lesson</b></p>
+                        </Button>
                     </div>
                 </div>
             </div>
