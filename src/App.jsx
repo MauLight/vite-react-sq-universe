@@ -7,7 +7,8 @@ import Protected from "./hoc/Protected";
 import './App.css'
 import Account from "./views/Account";
 import Inspiration from "./views/Inspiration";
-import QuestMenu from "./views/QuestMenu";
+import Week2_Menu from "./views/Week2_Menu";
+import Syllabus from "./views/Syllabus";
 
 
 function App() {
@@ -27,10 +28,18 @@ function App() {
               }
             />
             <Route
-              path="/quest-menu"
+              path="/syllabus"
               element={
                 <Protected>
-                  <QuestMenu />
+                  <Syllabus />
+                </Protected>
+              }
+            />
+            <Route
+              path="/week2-menu"
+              element={
+                <Protected>
+                  <Week2_Menu />
                 </Protected>
               }
             />
